@@ -4,7 +4,7 @@
  * @School: Tsinghua Univ
  * @Date: 2020-01-05 16:04:09
  * @LastEditors  : Xie Yufeng
- * @LastEditTime : 2020-01-06 01:43:40
+ * @LastEditTime : 2020-01-06 01:44:31
  -->
 # rotation_zhulab
 ***
@@ -63,6 +63,7 @@ software | function
 -|-
 nginx |  can browse `IP:port` to get data in computer (modify `nginx.conf`)
 Vscode | install `live server` plugin to see website in-time and modify `html` file and see direct effect
+
 update new `html` file to the website-server
 ***
 ## learning
