@@ -4,7 +4,7 @@
  * @School: Tsinghua Univ
  * @Date: 2020-01-05 16:04:09
  * @LastEditors  : Xie Yufeng
- * @LastEditTime : 2020-01-06 01:38:42
+ * @LastEditTime : 2020-01-06 01:43:40
  -->
 # rotation_zhulab
 ***
@@ -39,9 +39,11 @@ install `jupyterhub` and we can type `http://166.111.156.22:8000` on browsers an
 #### peer
 Yunxin Xu in Haipeng Gong lab does similar work: de novo protein folding by `pyrosetta` and `trRosetta`, chat with him to promote my work
 ### Jan_06_2019
+aim: mutate, Ile, split(know what is split, previous method about split in reading_list)
+paper reading about split 
 #### MSA-based approach 
 * mutiple sequence alignment (experienced but to do)
-* distance map --> hydrogen bond ditinguish (to do, not to hard)
+* distance map --> hydrogen bond ditinguish (to do, not too hard)
 * 3D visualization (doing)
 
 ##### server (`166.111.156.22`)
@@ -49,7 +51,7 @@ Yunxin Xu in Haipeng Gong lab does similar work: de novo protein folding by `pyr
 `teamviewer`(desktop remote) linux service
 `pymol` 
 so we can open `PDB` file on server and have a vision of protein 3D structure 
-##### `trRosetta`
+##### trRosetta
 from sequence file to PDB file 
 ```
 python trRosetta.py T1008.npz T1008.fasta model.pdb
