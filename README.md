@@ -4,7 +4,7 @@
  * @School: Tsinghua Univ
  * @Date: 2020-01-05 16:04:09
  * @LastEditors  : Xie Yufeng
- * @LastEditTime : 2020-01-08 21:20:31
+ * @LastEditTime : 2020-01-08 21:23:07
  -->
 # rotation_zhulab
 ***
@@ -97,7 +97,7 @@ forward-socks5t   /               127.0.0.1:1080 .
 # 设置 privoxy 监听任意 
 listen-address  127.0.0.1:8118
 ```
-run `./privoxy config` and type `ps aux | grep privoxy` to see
+run `./privoxy config` and type `ps aux | grep privoxy` to see (`netstat -na | grep 8118` or `lsof -i:8118`)
 ```
 xyf      20484  0.0  0.0  15908  1204 ?        Ss   20:39   0:00 ./privoxy config
 ```
