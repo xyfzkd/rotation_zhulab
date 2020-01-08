@@ -4,7 +4,7 @@
  * @School: Tsinghua Univ
  * @Date: 2020-01-05 16:04:09
  * @LastEditors  : Xie Yufeng
- * @LastEditTime : 2020-01-08 21:18:27
+ * @LastEditTime : 2020-01-08 21:20:31
  -->
 # rotation_zhulab
 ***
@@ -73,8 +73,9 @@ software | install | function
 -|-|-
 shadowsocks | `pip install shadowsocks` | sock5  can use browserVPN but terminalVPN blocked, `curl -x` allowed  
 privoxy | https://www.privoxy.org download make & make install | sock5->http/https
+
 three config_file
-edit `shadowsocks.json`
+* edit `shadowsocks.json`
 ```
 {
 "server":"34.85.87.130",
@@ -89,7 +90,7 @@ edit `shadowsocks.json`
 run `nohup sslocal -c shadowsocks.json &`
 you can `curl(maybe +x)` in terminal, because `curl` support `socks5`, to support `http`, install privoxy
 
-edit `config` in privoxy HOMEPATH/etc  
+* edit `config` in privoxy HOMEPATH/etc  
 ```
 # 设置转发到本地的 socks5 代理客户端端口
 forward-socks5t   /               127.0.0.1:1080 .
@@ -100,7 +101,7 @@ run `./privoxy config` and type `ps aux | grep privoxy` to see
 ```
 xyf      20484  0.0  0.0  15908  1204 ?        Ss   20:39   0:00 ./privoxy config
 ```
-
+* edit `privoxy.sh`
 ```privoxy.sh
 function proxy_on() {
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
